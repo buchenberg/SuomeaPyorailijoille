@@ -9,5 +9,8 @@ desktop.ini
 *.swp
 *.swo
 
+# Agents
+.qwen/
+
 # Node modules (if you add any later)
 node_modules/
