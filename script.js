@@ -6,6 +6,7 @@ let currentCategory = 'all';
 // DOM Elements
 const finnishPhraseEl = document.getElementById('finnish-phrase');
 const englishTranslationEl = document.getElementById('english-translation');
+const pronunciationEl = document.getElementById('pronunciation');
 const categoryLabelEl = document.getElementById('category-label');
 const counterEl = document.getElementById('counter');
 const progressFillEl = document.getElementById('progress-fill');
@@ -41,6 +42,7 @@ function updateDisplay() {
     if (filteredItems.length === 0) {
         finnishPhraseEl.textContent = 'No items in this category';
         englishTranslationEl.textContent = 'Try selecting a different category';
+        pronunciationEl.textContent = '';
         categoryLabelEl.textContent = '';
         counterEl.textContent = '0 / 0';
         progressFillEl.style.width = '0%';
@@ -50,6 +52,7 @@ function updateDisplay() {
     const currentItem = filteredItems[currentIndex];
     finnishPhraseEl.textContent = currentItem.finnish;
     englishTranslationEl.textContent = currentItem.english;
+    pronunciationEl.textContent = currentItem.pronunciation ? `🔊 ${currentItem.pronunciation}` : '';
     categoryLabelEl.textContent = formatCategoryName(currentItem.category);
     
     // Update counter

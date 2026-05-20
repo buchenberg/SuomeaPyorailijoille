@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finnish Pronunciation Guide</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .pronunciation-page {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .pronunciation-page h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 30px;
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 8px 16px;
+            border: 2px solid #667eea;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            background-color: #667eea;
+            color: #ffffff;
+        }
+
+        .section {
+            margin-bottom: 40px;
+            padding: 25px;
+            background-color: #f8f9fa;
+            border-radius: 12px;
+        }
+
+        .section h2 {
+            color: #2c3e50;
+            margin-top: 0;
+            font-size: 1.5em;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        .section h3 {
+            color: #34495e;
+            margin: 20px 0 10px 0;
+        }
+
+        .vowel-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+
+        .vowel-table th,
+        .vowel-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        .vowel-table th {
+            background-color: #667eea;
+            color: white;
+            font-weight: 600;
+        }
+
+        .vowel-table tr:hover {
+            background-color: #e9ecef;
+        }
+
+        .vowel-letter {
+            font-size: 1.3em;
+            font-weight: 700;
+            color: #667eea;
+        }
+
+        .example {
+            background-color: #ffffff;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 10px 0;
+            border-left: 4px solid #667eea;
+        }
+
+        .example-word {
+            font-weight: 700;
+            color: #2c3e50;
+            font-size: 1.1em;
+        }
+
+        .example-pronunciation {
+            color: #667eea;
+            font-style: italic;
+        }
+
+        .tip-box {
+            background: linear-gradient(135deg, #eaf4ff 0%, #d4e8ff 100%);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 15px 0;
+            border: 2px solid #b8d4f0;
+        }
+
+        .tip-box p {
+            margin: 5px 0;
+        }
+
+        .rule-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .rule-list li {
+            padding: 10px 15px;
+            margin: 8px 0;
+            background-color: #ffffff;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+
+        .rule-list li strong {
+            color: #667eea;
+        }
+
+        @media (max-width: 600px) {
+            .pronunciation-page {
+                padding: 15px;
+            }
+
+            .section {
+                padding: 15px;
+            }
+
+            .vowel-table th,
+            .vowel-table td {
+                padding: 8px;
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="pronunciation-page">
+            <a href="index.html" class="back-link">← Back to Flashcards</a>
+
+            <h1>📖 Finnish Pronunciation Guide</h1>
+            <p class="subtitle">Finnish is one of the most phonetic languages in the world — what you see is what you say!</p>
+
+            <div class="section">
+                <h2>🔤 Vowels</h2>
+                <p>Finnish has 8 vowels. Each has a clear, consistent sound:</p>
+
+                <table class="vowel-table">
+                    <thead>
+                        <tr>
+                            <th>Letter</th>
+                            <th>Sound</th>
+                            <th>English Example</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="vowel-letter">a</td>
+                            <td>ah</td>
+                            <td>f<strong>a</strong>ther</td>
+                        </tr>
+                        <tr>
+                            <td class="vowel-letter">ä</td>
+                            <td>eh</td>
+                            <td>c<strong>a</strong>t (British)</td>
+                        </tr>
+                        <tr>
+                            <td class="vowel-letter">e</td>
+                            <td>eh</td>
+                            <td>b<strong>e</strong>t</td>
+                        </tr>
+                        <tr>
+                            <td class="vowel-letter">i</td>
+                            <td>ee</td>
+                            <td>mac<strong>ea</strong>rooni</td>
+                        </tr>
+                        <tr>
+                            <td class="vowel-letter">o</td>
+                            <td>oh</td>
+                            <td>m<strong>o</strong>re</td>
+                        </tr>
+                        <tr>
+                            <td class="vowel-letter">ö</td>
+                            <td>uh</td>
+                            <td>ir<strong>o</strong>n (British)</td>
+                        </tr>
+                        <tr>
+                            <td class="vowel-letter">u</td>
+                            <td>oo</td>
+                            <td>b<strong>oo</strong>t</td>
+                        </tr>
+                        <tr>
+                            <td class="vowel-letter">y</td>
+                            <td>ew</td>
+                            <td>cue (round lips)</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="tip-box">
+                    <p><strong>💡 Key Tip:</strong> The letters <strong>ä</strong>, <strong>ö</strong>, and <strong>y</strong> are unique to Finnish. Practice them!</p>
+                    <p><strong>ä</strong> = like the "a" in "cat" (but more open)</p>
+                    <p><strong>ö</strong> = round your lips for "o" but say "e"</p>
+                    <p><strong>y</strong> = round your lips for "u" but say "i"</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>🔊 Double Vowels</h2>
+                <p>When a vowel is repeated, hold it longer:</p>
+
+                <div class="example">
+                    <span class="example-word">aa</span> = long "ah" — like <span class="example-pronunciation">"aah"</span>
+                </div>
+                <div class="example">
+                    <span class="example-word">ää</span> = long "eh" — like <span class="example-pronunciation">"eeh"</span>
+                </div>
+                <div class="example">
+                    <span class="example-word">ii</span> = long "ee" — like <span class="example-pronunciation">"eee"</span>
+                </div>
+                <div class="example">
+                    <span class="example-word">öö</span> = long "uh" — hold the sound
+                </div>
+
+                <div class="tip-box">
+                    <p><strong>⚠️ Important:</strong> Double vowels are NOT diphthongs — they're the same sound held longer.</p>
+                    <p><strong>Hyvää</strong> = HY-vää (not "hy-vaa")</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>🔤 Consonants</h2>
+                <p>Most consonants are similar to English:</p>
+
+                <table class="vowel-table">
+                    <thead>
+                        <tr>
+                            <th>Letter</th>
+                            <th>Sound</th>
+                            <th>English Example</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="vowel-letter">b</td>
+                            <td>b</td>
+                            <td><strong>b</strong>oy</td>
+                        </tr>
+                        <tr>
+                            <td class="vowel-letter">d</td>
+                            <td>d</td>
+                            <td><strong>d</strong>og</td>
+                        </tr>
+                        <tr>
+                            <td class="vowel-letter">f</td>
+                            <td>f</td>
+                            <td><strong>f</strong>ish</td>
+                        </tr>
+                        <tr>
+                            <td class="vowel-letter">g</td>
+                            <td>g</td>
+                            <td><strong>g</strong>o</td>
+                        </tr>
+                        <tr>
+                            <td class="vowel-letter">h</td>
+                            <td>h</td>
+                            <td><strong>h</strong>ot</td>
+                        </tr>
+                        <tr>
+                            <td class="vowel-letter">j</td>
+                            <td>y</td>
+                            <td><strong>y</strong>es</td>
+                        </tr>
+                        <tr>
+                            <td class="vowel-letter">k</td>
+                            <td>k</td>
+                            <td><strong>c</strong>at</td>
+                        </tr>
+                        <tr>
+                            <td class="vowel-letter">l</td>
+                            <td>l</td>
+                            <td><strong>l</strong>ove</td>
+                        </tr>
+                        <tr>
+                            <td class="vowel-letter">m</td>
+                            <td>m</td>
+                            <td><strong>m</strong>an</td>
+                        </tr>
+                        <tr>
+                            <td class="vowel-letter">n</td>
+                            <td>n</td>
+                            <td><strong>n</strong>o</td>
+                        </tr>
+                        <tr>
+                            <td class="vowel-letter">p</td>
+                            <td>p</td>
+                            <td><strong>p</strong>en</td>
+                        </tr>
+                        <tr>
+                            <td class="vowel-letter">r</td>
+                            <td>rolled r</td>
+                            <td>pe<strong>r</strong>ro (Spanish)</td>
+                        </tr>
+                        <tr>
+                            <td class="vowel-letter">s</td>
+                            <td>s</td>
+                            <td><strong>s</strong>un</td>
+                        </tr>
+                        <tr>
+                            <td class="vowel-letter">t</td>
+                            <td>t</td>
+                            <td><strong>t</strong>op</td>
+                        </tr>
+                        <tr>
+                            <td class="vowel-letter">v</td>
+                            <td>v</td>
+                            <td><strong>v</strong>ery</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="tip-box">
+                    <p><strong>💡 Special Note:</strong></p>
+                    <p><strong>j</strong> = always sounds like English "y" (yes)</p>
+                    <p><strong>r</strong> = rolled/trilled (practice by saying "dd" quickly)</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>📏 Stress & Length</h2>
+
+                <h3>Stress Pattern</h3>
+                <ul class="rule-list">
+                    <li><strong>First syllable</strong> is always stressed: <strong>KY</strong>-llä, <strong>KI</strong>-itos, <strong>HY</strong>-vää</li>
+                    <li>Secondary stress falls on every other syllable: TER-ve-TU-lo-a</li>
+                </ul>
+
+                <h3>Double Consonants</h3>
+                <ul class="rule-list">
+                    <li>Double consonants are held longer: <strong>tt</strong> in <em>hyvää</em> is a crisp, held "t"</li>
+                    <li><strong>Teltta</strong> (tent) = TEL-tta (hold the "t")</li>
+                    <li><strong>Kissa</strong> (cat) = KIS-sa (hold the "s")</li>
+                </ul>
+
+                <div class="tip-box">
+                    <p><strong>⚠️ Critical:</strong> Length changes meaning!</p>
+                    <p><strong>tuli</strong> = fire</p>
+                    <p><strong>tuuli</strong> = wind</p>
+                    <p><strong>tylli</strong> = (not a word, but illustrates the point)</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>🎯 Common Patterns</h2>
+
+                <h3>Vowel Harmony</h3>
+                <p>Finnish words follow vowel harmony — front vowels (ä, ö, y) don't mix with back vowels (a, o, u) in the same word, except in compound words.</p>
+
+                <h3>Common Letter Combinations</h3>
+                <ul class="rule-list">
+                    <li><strong>nk</strong> = "ng" as in si<strong>ng</strong> → <em>kenkä</em> (shoe)</li>
+                    <li><strong>ng</strong> = "ng" as in lo<strong>ng</strong> → <em>kenkiä</em> (shoes)</li>
+                    <li><strong>ht</strong> = "ht" as in li<strong>ght</strong> → <em>huomenta</em></li>
+                    <li><strong>au</strong> = "ow" as in n<strong>ow</strong> → <em>sauna</em></li>
+                    <li><strong>ai</strong> = "eye" → <em>raitti</em></li>
+                    <li><strong>ei</strong> = "ay" → <em>nei</em></li>
+                    <li><strong>oi</strong> = "oy" as in b<strong>oy</strong> → <em>oikea</em></li>
+                    <li><strong>ui</strong> = "wee" → <em>kuusi</em> (six)</li>
+                    <li><strong>yi</strong> = "yee" → <em>pyyhi</em> (wipe)</li>
+                    <li><strong>äy</strong> = "eye" → <em>hyvä</em> (good)</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>🗣️ Practice Phrases</h2>
+
+                <div class="example">
+                    <span class="example-word">Hei!</span>
+                    <span class="example-pronunciation">→ "hay"</span>
+                    <p>Hello!</p>
+                </div>
+
+                <div class="example">
+                    <span class="example-word">Kiitos</span>
+                    <span class="example-pronunciation">→ "KEE-tos"</span>
+                    <p>Thank you</p>
+                </div>
+
+                <div class="example">
+                    <span class="example-word">Anteeksi</span>
+                    <span class="example-pronunciation">→ "AN-tees-kee"</span>
+                    <p>Sorry / Excuse me</p>
+                </div>
+
+                <div class="example">
+                    <span class="example-word">Hyvää päivää!</span>
+                    <span class="example-pronunciation">→ "HY-vää PÄÄ-vää"</span>
+                    <p>Good day!</p>
+                </div>
+
+                <div class="example">
+                    <span class="example-word">Sauna</span>
+                    <span class="example-pronunciation">→ "SAU-na"</span>
+                    <p>Sauna (Finnish gift to the world!)</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>💡 Quick Tips</h2>
+                <ul class="rule-list">
+                    <li><strong>Read it as it's written</strong> — Finnish is phonetic!</li>
+                    <li><strong>Stress the first syllable</strong> — always!</li>
+                    <li><strong>Hold double letters</strong> — they change meaning</li>
+                    <li><strong>Round your lips</strong> for ö and y</li>
+                    <li><strong>Roll your r's</strong> — practice makes perfect</li>
+                    <li><strong>Speak clearly</strong> — each syllable gets equal time</li>
+                </ul>
+            </div>
+
+            <div class="tip-box" style="background: linear-gradient(135deg, #fff5e6 0%, #ffe8cc 100%); border-color: #ffb366;">
+                <p><strong>🚴 For Cyclists:</strong> The pronunciation guide in the flashcards uses simplified English approximations. Listen to native speakers when possible, but these tips will get you started!</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
