@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(www.omniglot.com)",
+      "WebFetch(www.finnishphrases.com)",
+      "WebFetch(www.reddit.com)",
+      "WebFetch(www.foolingfinns.com)",
+      "Bash(powershell *)",
+      "Bash(start *)",
+      "Bash(git init)",
+      "Bash(git add *)"
+    ]
+  },
+  "$version": 4
+}

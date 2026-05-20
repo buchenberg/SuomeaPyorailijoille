@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finnish Learning App - Bicycle Touring</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🚴 Finnish for Cyclists</h1>
+            <p class="subtitle">Essential phrases for your bicycle tour in Finland</p>
+        </header>
+
+        <nav class="category-nav">
+            <button class="category-btn active" data-category="all">All</button>
+            <button class="category-btn" data-category="greetings">Greetings</button>
+            <button class="category-btn" data-category="basics">Basics</button>
+            <button class="category-btn" data-category="directions">Directions</button>
+            <button class="category-btn" data-category="cycling">Cycling</button>
+            <button class="category-btn" data-category="camping">Camping</button>
+            <button class="category-btn" data-category="food">Food</button>
+            <button class="category-btn" data-category="accommodation">Stay</button>
+            <button class="category-btn" data-category="shopping">Shopping</button>
+            <button class="category-btn" data-category="emergencies">Emergency</button>
+            <button class="category-btn" data-category="social">Social</button>
+            <button class="category-btn" data-category="nature">Nature</button>
+        </nav>
+
+        <div class="progress-bar">
+            <div class="progress-fill" id="progress-fill"></div>
+        </div>
+        <p class="counter" id="counter">1 / 120</p>
+
+        <div id="flashcard-container">
+            <div class="flashcard">
+                <div class="flashcard-inner">
+                    <div class="flashcard-front">
+                        <span class="category-label" id="category-label"></span>
+                        <h2 id="finnish-phrase">Loading...</h2>
+                        <p class="hint">Click to reveal</p>
+                    </div>
+                    <div class="flashcard-back">
+                        <p id="english-translation">Click to reveal!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="prev-btn" class="control-btn">← Previous</button>
+            <button id="next-btn" class="control-btn primary">Next →</button>
+        </div>
+
+        <div class="keyboard-hint">
+            <p>💡 Click card to flip • Arrow keys to navigate • 1-9 for categories</p>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
